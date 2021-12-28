@@ -132,6 +132,7 @@ get_de_wm() {
 	echo "${wm}"
 }
 
+# total length: 42 chars (may vary)
 echo
 echo -e "               ${magenta}os${white}     $(fetch_sys 'os') $(fetch_sys 'arch')"
 echo -e "               ${green}ker${white}    $(fetch_sys 'kernel')"
@@ -143,5 +144,5 @@ echo -e "               ${green}de/wm${white}  $(get_de_wm)"
 echo -e "               ${cyan}upt${white}    $(uptime -p | sed 's/up//')"
 echo -e "               ${yellow}disk${white}   $(get_mass_storage_stats 'used') / $(get_mass_storage_stats 'available')"
 echo -e "               "
-echo -e "        ${yellow}󰮯  ${yellow}${green}󰊠  ${green}${blue}󰊠  ${blue}${red}󰊠  ${red}${cyan}󰊠  ${cyan}"
+echo -e "\t    ${yellow}󰮯  ${yellow}${green}󰊠  ${green}${blue}󰊠  ${blue}${red}󰊠  ${red}${cyan}󰊠  ${cyan}"
 echo -e "               ${nc}"
