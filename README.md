@@ -15,7 +15,7 @@ $ make install
 ```bash
 $ make clean
 ```
-> Cleans installation and linking dirs
+> Cleans installation dirs (including symlinks)
 
 ### Development
 
